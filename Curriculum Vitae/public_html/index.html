@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MI CV</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .borde1 {
+                border: 1px #000 solid;
+                background: aqua;
+            }	
+            .borde2 {
+                border: 1px #000 solid;
+            }
+            img {
+                display: block;
+                margin: auto;
+            }
+            h1 {
+                color: white;
+            }
+            hr {
+                border: 1px grey solid;
+            }
+            ul {
+                list-style: none;
+            }
+            header {
+                border-top: 5px solid #00A78D;
+                padding: 10px;
+            }
+            footer {
+                background: grey;
+            }
+            span {
+                color: white;
+            }
+            h2 {
+                display: inline;
+                color: skyblue;
+            }
+            i {
+                font-size: 30px;
+                color: grey;
+
+            }
+            .caja {
+                margin-top: 30px;
+            }
+            h6 {
+                color: brown;
+            }
+            img {
+                border-radius: 50%;
+                margin-top: 40px;
+            }
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+        </header>
+        <div class="container" style="margin-bottom: 30px"> <!-- container-fluid para que abarque el 100% del ancho de la pantalla --> <!-- el container centra todo el contenido y pone medidas determinadas(width y margenes) -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 borde1">
+                    <img src="imagenes/me.jpg" width="200px" height="200px">
+                    <h1>Alejandro Lapa Ramos</h1>
+                    <hr>
+                    <ul>
+                        <li><strong>Fecha de Nacimiento :</strong></li><p> 8 de septiembre de 2001</p><br>
+                        <!-- <li><strong>Edad :</strong></li><p> 17 años</p><br> -->
+                        <li><strong>Localidad :</strong></li><p>Villa Devoto</p><br>
+                        <!-- <li><strong>DNI :</strong></li><p> 43.574.860</p><br>
+                        <li><strong>Domicilio :</strong></li><p> Villa Devoto</p><br> -->
+                        <li><strong>Código Postal :</strong></li><p> 1419</p><br>
+                        <li><strong>Teléfono particular:<!-- nuevo cambio que no sé si dejarlo--></strong></li><p> 15 7027-9892</p><br>
+                        <li><strong>Teléfono fijo:<!-- nuevo cambio que no sé si dejarlo --></strong></li><p> 4504-1325</p><br>
+                        <li><strong>Email :</strong></li><p> ale.lapa3141@gmail.com</p>
+                        <br>
+                        <li><strong>Dirección de GitHub :</strong></li><p>https://github.com/Alejandro3141</p>
+                    </ul>
+                    <section>
+                        <h3 style="margin-top: 50px; text-align: center;">Herramientas de Desarrollo</h3>
+                        <hr>
+                        <ul>
+                            <li type="circle">JAVA 8</li>
+                            <li type="circle">Maven, GitHub y Git</li>
+                            <li type="circle">JDBC y ORM Hibernate - JPA</li>
+                            <li type="circle">Patrones de Diseño: DAO y Singleton</li>
+                            <li type="circle">Sockets TCP/IP</li>
+                            <li type="circle">Interfaz Gráfica Desktop: Swing</li>
+                            <li type="circle">MultiThread</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 borde2"> <!-- Simetricamente podría cambiar el md a 6 en el borde1 y en el borde2 -->
+                    <!--
+            <div class="card caja">
+                    
+                    <div class="card-body">
+                            <i class="fas fa-briefcase"></i>
+                            <h2 class="card-title">EXPERIENCIA LABORAL</h2>
+                            <hr>
+                    </div>
+            </div>
+                    -->
+                    <div class="card caja">
+                        <div class="card-body">
+                            <i class="fas fa-book"></i>
+                            <h2 class="card-title">FORMACIÓN ACADÉMICA</h5>
+                                <hr>
+                                <h6>Colegio N°19 "Luis Pasteur" D.E 17</h6>
+                                <small class="text-muted card-text"> 2015 - 2019</small>
+                                <p class="card-text">Bachillerato con orientación en Ciencias Naturales<br>
+                                    CABA - Buenos Aires</p>
+                                <!--
+                                <p class="card-text"> <b class="text-dark">Fecha</b></p>
+                <p class="card-text">(2014-2015) (2017-2018) </p>
+                                -->
+                        </div>
+                    </div>
+                    <div class="card caja">
+                        <div class="card-body">
+                            <i class="fas fa-book"></i>
+                            <!-- <i class="fas fa-laptop"></i> -->
+                            <h2 class="card-title">FORMACIÓN COMPLEMENTARIA</h2>
+                            <hr>
+                            <!--
+                            <h6>Paquete de Office (Word, PowerPoint, Excel)</h6>
+            <p class="card-text"> <b class="text-dark">Fecha</b></p>
+            <p class="card-text"></p>
+            <h6>Desarrollo de páginas web (HTML, CSS)</h6><p class="card-text"> <b class="text-dark">Fecha</b></p>
+                            -->
+                            <h6>Curso de Fortalecimiento de Habilidades Laborales: "Creando tu Futuro"</h6>
+                            <small class="card-text text-muted">Febrero 2018 - Mayo 2018</small> <!-- 7 de Febrero de 2018 - 10 de Mayo de 2018 -->
+                            <p class="card-text"> Atención al Cliente - Turismo - Operador de Computadoras <br>
+                                Certifican Fundación Citi, Kuepa y Global Fairness Initiative <br>
+                                Julieta Feijó Cardillo Coordinadora del Proyecto en Argentina<br>
+                                CABA - Buenos Aires </p>
+                            <h6>Curso de Programación: "Aprendé Programando"</h6>
+                            <small class="card-text text-muted">Abril 2018 - Julio 2018</small>
+                            <p class="card-text"> Desarrollo Web Nivel 1 - HTML, CSS, Bootstrap<br>
+                                Dirección General de Tecnología Educativa - Ministerio de Educación<br>
+                                CABA - Buenos Aires</p>
+                            <small class="card-text text-muted">Agosto 2018 - Diciembre 2018</small>
+                            <p class="card-text"> Desarrollo Web Nivel 2 - Javascript.<br>
+                                Dirección General de Tecnología Educativa - Ministerio de Educación<br>
+                                CABA - Buenos Aires</p>
+                            <h6>Trayecto Formativo Programador</h6>
+                            <small class="card-text text-muted">Marzo 2019 - Julio 2019 (120 horas de duración)</small>
+                            <p class="card-text"> Técnicas de Programación (JAVA) <br>
+                                Centro de Formación Profesional N°8 SMATA<br>
+                                CABA - Buenos Aires </p>
+                            <small class="card-text text-muted">Marzo 2019 - Julio 2019 (70 horas de duración)</small>
+                            <p class="card-text"> Base de Datos (MySQL) <br>
+                                Centro de Formación Profesional N°8 SMATA<br>
+                                CABA - Buenos Aires </p>
+                            <small class="card-text text-muted">Agosto 2019 - Diciembre 2019 (150 horas de duración)</small>
+                            <p class="card-text"> Programación Orientada a Objetos (JAVA) <br>
+                                Centro de Formación Profesional N°8 SMATA<br>
+                                CABA - Buenos Aires </p>
+                        </div>
+                    </div>
+                    <div class="card caja" style="margin-bottom: 20px">
+                        <div class="card-body">
+                            <i class="fas fa-comments"></i>
+                            <h2 class="card-title">IDIOMAS</h2>
+                            <hr>
+                            <h6>Inglés</h6>
+                            <small class="card-text text-muted"> Marzo 2013 - diciembre 2018</small>
+                            <p class="card-text"> <b class="text-dark">Nivel </b> Intermedio-Alto (Sexto Año Completo)<br>
+                                Centro Educativo Complementario de Idiomas Extranjeros N°17 - Ministerio de Educación<br>
+                                CABA - Buenos Aires</p>
+
+                        </div>
+                    </div>
+                </div>		
+            </div>
+            <!--
+            <footer>
+                    <div class="container">
+                            <div class="row">
+                                    <div class="col">
+                                            <p>Copyright © 2018 - Desarrollado por <span>Alejandro Lapa</span></p>
+                                    </div>
+                            </div>
+                    </div>
+            </footer>
+            -->
+    </body>
+</html>

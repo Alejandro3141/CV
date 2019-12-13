@@ -1,0 +1,5 @@
+/* <section>
+	<div class=”container”></div>
+</section> 
+Una vez hecho esto, cuando apliquemos un fondo a la sección ésta ocupará la totalidad del ancho, ya que, se encuentra 
+por fuera del contenedor. Pero todo lo que quede por dentro del div, queda centrado.  */
